@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🍀Clover garden</title>
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> 
+    </head>
+
+    <body class="font-body">
+
+        <!-- home section -->
+        <section class="bg-white py-5 md:mb-5">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
+                    <div class="flex items-center mb-10 lg:mb-0">
+                        <img src="assets/image/clover_negative.png" width="85" height="300" ></img>
+
+                        <button class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md" @click="navbarOpen = !navbarOpen">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#">홈</a>
+                        </li>
+                        <li class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#">상점</a>
+                        </li>
+                        <li class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#">멤버십</a>
+                        </li>
+                        <li class="font-semibold text-gray-900 hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#">연락하기</a>
+                        </li>
+                    </ul>
+
+                    <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <a href="https://discord.gg/FX4zDdM3Wh" class="px-6 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0">참가하기</a>
+                        <a href="mailto:contect@jihy.uk" class="px-6 py-4 border-2 border-blue-500 text-blue-500 font-semibold text-lg rounded-xl hover:bg-blue-700 hover:text-white transition ease-linear duration-500">문의하기</a>
+                    </div>
+                </nav>
+
+                <div class="flex flex-col lg:flex-row justify-between space-x-20">
+                    <div class="text-center lg:text-left mt-40">
+                        <h1 class="font-semibold text-gray-800 text-3xl md:text-6xl leading-normal mb-6">모두를 위한, <br> 모두의 공간</h1>
+
+                        <p class="font-light text-gray-400 text-md md:text-lg leading-normal mb-11">클로버가든은 당신이 누구든 중요하지 않아요<br>수 많은 컨텐츠가 제공 되는 클로버 가든으로 함께 떠나요!</p>
+
+                        <a href="https://discord.gg/FX4zDdM3Wh" class="px-6 py-4 bg-info font-semibold text-white text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500">참가하기</a>
+                    </div>
+
+                    <div class="mt-24">
+                        <img src="assets/image/undraw_beach_day_h78l.png" width="670" height="530"alt="Image">
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- home section //end -->
+
+        <!-- feature section -->
+        <section class="bg-white py-16 md:mt-10">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <p class="font-light text-gray-500 text-lg md:text-xl text-center uppercase mb-6">차이점</p>
+
+                <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-10">단순하면서도 다르게, <br> 다른 서버와는 확연히 구별되게</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                    <div class="text-center">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-20 py-6 flex justify-center bg-blue-200 bg-opacity-30 text-blue-700 rounded-xl">
+                                <i data-feather="terminal"></i>
+                            </div>
+                        </div>
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">자체 개발 봇</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">자체 개발 봇 '클로비'와 '클로하'로 유저분들의 편의성을 개선했습니다.</p>
+
+                        <div class="flex justify-center">
+                            <a href="#" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
+                                더 알아보기 
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-20 py-6 flex justify-center bg-blue-200 bg-opacity-30 text-blue-700 rounded-xl">
+                                <i data-feather="book-open"></i>
+                            </div>
+                        </div>
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">수많은 컨텐츠</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">운영진들이 직접 만든 길고 긴 스토리를 들어볼 수 있습니다.</p>
+
+                        <div class="flex justify-center">
+                            <a href="#" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
+                                더 알아보기
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-20 py-6 flex justify-center bg-blue-200 bg-opacity-30 text-blue-700 rounded-xl">
+                                <i data-feather="clock"></i>
+                            </div>
+                        </div>
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">서로를 생각하는 유저들</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">모두가 서로를 아끼주는 해피월드로 즐겁게 지내실 수 있습니다 :)</p>
+
+                        <div class="flex justify-center">
+                            <a href="#" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
+                                더 알아보기 
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- feature section //end -->
+        <!-- feature section -->
+        <section class="bg-white py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="flex flex-col lg:flex-row justify-between space-x-16">
+                    <div class="flex justify-center lg:justify-start">
+                        <iframe src="https://discord.com/widget?id=980307550950015006&theme=dark" width="450" height="650" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+        
+                    <div class="mt-16">
+                        <h1 class="font-semibold text-gray-900 text-xl md:text-4xl mb-20">수많은 멤버들을 <br> 멤버 리스트를 통해 확인하세요</h1>
+        
+                        <div class="grid grid-cols-1 md:grid-cols-2 md:space-x-20 mb-16">
+                            <div class="mb-5 md:mb-0">
+                                <div class="w-20 py-6 flex justify-center bg-info bg-opacity-5 rounded-xl mb-4">
+                                    <i data-feather="user" class="text-info"></i>
+                                </div>
+            
+                                <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">300+</h3>
+                                <p class="font-light text-gray-400 text-md md:text-lg">지금까지 함께해온, <br>함께 할 멤버들 </p>
+                            </div>
+            
+                            <div>
+                                <div class="w-20 py-6 flex justify-center bg-red-500 bg-opacity-5 rounded-xl mb-4">
+                                    <i data-feather="command" class="text-red-500"></i>
+                                </div>
+            
+                                <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">20+</h3>
+            
+                                <p class="font-light text-gray-400 text-md md:text-lg">관리를 맡아주시고 계신분들과<br>맡아 주셨던 분들의 수</p>
+                            </div>
+                        </div>
+        
+                        <div class="grid grid-cols-1 md:grid-cols-2 md:space-x-20">
+                            <div class="mb-5 md:mb-0">
+                                <div class="w-20 py-6 flex justify-center bg-yellow-500 bg-opacity-5 rounded-xl mb-4">
+                                    <i data-feather="users" class="text-yellow-500"></i>
+                                </div>
+            
+                                <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">10+</h3>
+            
+                                <p class="font-light text-gray-400 text-md md:text-lg">서버를 만드는데 <br> 도움을 주셨던 분들</p>
+                            </div>
+            
+                            <div>
+                                <div class="w-20 py-6 flex justify-center bg-green-500 bg-opacity-5 rounded-xl mb-4">
+                                    <i data-feather="trending-up" class="text-green-500"></i>
+                                </div>
+            
+                                <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">78%</h3>
+            
+                                <p class="font-light text-gray-400 text-md md:text-lg">함께이기에 달성할 수 있었던<br>달성률이자 우리의 결과</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- feature section //end -->
+
+        <!-- join volunters section -->
+        <section class="bg-white py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="w-full h-full bg-blue-400 rounded-2xl md:rounded-3xl relative lg:flex items-center">
+                    <div class="hidden lg:block">
+                        <img src="assets/image/matey-two-women-in-the-office-talking-about-work.png" alt="Image" class="relative z-10">
+
+                        <img src="assets/image/pattern-2.png" alt="Image" class="absolute top-14 left-40">
+
+                        <img src="assets/image/pattern.png" alt="Image" class="absolute top-0 z-0">
+                    </div>
+
+                    <div class="lg:relative py-4 lg:py-0">
+                        <h1 class="font-semibold text-white text-xl md:text-4xl text-center lg:text-left leading-normal md:mb-5 lg:mb-10">클로버가든과 함께 일하고 싶으신가요?<br> 그렇다면 연락 부탁드립니다!</h1>
+
+                        <div class="hidden md:block flex items-center text-center lg:text-left space-x-5">
+                            <input type="text" placeholder="Email" class="px-4 py-4 w-96 bg-gray-50 placeholder-gray-400 rounded-xl outline-none">
+
+                            <a href="mailto:contect@jihy.uk" class="px-6 py-4 font-semibold bg-gray-50 text-info text-lg rounded-xl hover:bg-blue-500 hover:text-white transition ease-in-out duration-500">보내기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- join volunters section //end -->
+
+        <footer class="bg-white py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row lg:justify-between">
+
+                    <div class="space-y-7 mb-10 lg:mb-0">
+                        <div class="flex justify-center lg:justify-start">
+                            <img src="assets/image/clover_negative.png" width="85" height="300" ></img>
+                        </div>
+                        
+                        <p class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left">모두가 함께하는<br>그리고 화합하는 커뮤니티를 위해</p>
+
+                        <div class="flex items-center justify-center lg:justify-start space-x-5">
+                            <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500">
+                                <i data-feather="facebook"></i>
+                            </a>
+
+                            <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500">
+                                <i data-feather="twitter"></i>
+                            </a>
+
+                            <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">바로가기</h4>
+
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">서버 규칙</a>
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">서버 정보</a>
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">문의하기</a>
+                        
+
+
+                    </div>
+
+                    <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">기부하기</h4>
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">정보</a>
+
+                    </div>
+
+                    <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">기타</h4>
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">FAQ</a>
+                    </div>
+
+                </div>
+            </div> <!-- container.// -->
+
+        </footer>
+
+        <script>
+            feather.replace()
+        </script>
+
+    </body>
+</html>
